@@ -26,6 +26,7 @@
         <module>quiz-reporting</module>
         <module>quiz-data-control</module>
         <module>quiz-api-gateway</module>
+        <module>quiz-integration-tests</module>
     </modules>
     
     <properties>
