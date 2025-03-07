@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.quiz</groupId>
+        <artifactId>quiz-application</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    
+    <artifactId>quiz-api-gateway</artifactId>
+    <name>Quiz API Gateway</name>
+    <description>Module de façade API et point d'entrée principal</description>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.quiz</groupId>
+            <artifactId>quiz-auth</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.quiz</groupId>
+            <artifactId>quiz-user</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.quiz</groupId>
+            <artifactId>quiz-content</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.quiz</groupId>
+            <artifactId>quiz-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.quiz</groupId>
+            <artifactId>quiz-reporting</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-tracing-bridge-brave</artifactId>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
