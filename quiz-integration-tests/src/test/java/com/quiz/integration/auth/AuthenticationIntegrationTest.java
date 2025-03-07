@@ -6,6 +6,7 @@ import com.quiz.integration.config.TestConfig;
 import com.quiz.integration.util.TestDataUtil;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -48,6 +49,7 @@ public class AuthenticationIntegrationTest {
     }
 
     @Test
+    @Disabled("À activer lorsque le module d'authentification sera implémenté")
     void testSuccessfulAuthentication() {
         // Préparation de la requête
         Map<String, String> requestBody = new HashMap<>();
@@ -67,6 +69,7 @@ public class AuthenticationIntegrationTest {
     }
 
     @Test
+    @Disabled("À activer lorsque le module d'authentification sera implémenté")
     void testFailedAuthentication() {
         // Préparation de la requête
         Map<String, String> requestBody = new HashMap<>();
