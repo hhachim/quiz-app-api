@@ -1,11 +1,11 @@
-// quiz-integration-tests/src/test/java/com/quiz/integration/ApplicationIntegrationTest.java
 package com.quiz.integration;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
+import com.quiz.integration.config.TestConfig;
 
-@SpringBootTest
+@SpringBootTest(classes = TestConfig.class)
 @ActiveProfiles("test")
 public class ApplicationIntegrationTest {
 
