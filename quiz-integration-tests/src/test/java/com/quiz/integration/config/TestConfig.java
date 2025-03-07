@@ -1,4 +1,3 @@
-// quiz-integration-tests/src/test/java/com/quiz/integration/config/TestConfig.java
 package com.quiz.integration.config;
 
 import org.springframework.boot.SpringApplication;

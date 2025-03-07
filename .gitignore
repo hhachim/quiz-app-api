@@ -1,1 +1,29 @@
-target
+# Dossiers compilés et générés
+target/
+**/target/
+*.class
+
+# Fichiers IDE
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+*.sublime-*
+
+# Logs
+*.log
+logs/
+
+# Fichiers temporaires
+*.tmp
+*.swp
+*~
+
+# Rapports de tests spécifiques
+surefire-reports/
+failsafe-reports/
+
+# Autres
+.DS_Store
