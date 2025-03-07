@@ -4,14 +4,12 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
-import com.quiz.integration.config.TestConfig;
 
-@SpringBootTest(classes = TestConfig.class)
-@ActiveProfiles("test")
+@SpringBootTest
+@Disabled("Tests désactivés pour l'étape 1 - à activer lors de l'étape 3")
 public class ApplicationIntegrationTest {
 
     @Test
-    @Disabled("À activer lorsque le module d'authentification sera implémenté")
     void contextLoads() {
         // Ce test vérifie simplement que le contexte Spring se charge correctement
     }
