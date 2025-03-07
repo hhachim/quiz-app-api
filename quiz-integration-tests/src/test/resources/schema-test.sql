@@ -1,0 +1,1 @@
+-- Ce fichier peut être vide car Hibernate créera automatiquement les tables via ddl-auto=create-drop
